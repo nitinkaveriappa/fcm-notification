@@ -6,8 +6,7 @@ initializeApp({
   credential: cert(serviceAccount),
 });
 
-const registrationToken =
-  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+const registrationToken = "<REGISTRATION_TOKEN>";
 
 const message = {
   data: {
@@ -18,8 +17,7 @@ const message = {
   token: registrationToken,
 };
 
-// Send a message to the device corresponding to the provided
-// registration token.
+// Send a message to the device corresponding to the provided registration token.
 getMessaging()
   .send(message)
   .then((response) => {
