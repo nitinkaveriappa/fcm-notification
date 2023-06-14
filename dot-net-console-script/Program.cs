@@ -1,4 +1,3 @@
-// See https://aka.ms/new-console-template for more information
 using FirebaseAdmin;
 using FirebaseAdmin.Auth;
 using FirebaseAdmin.Messaging;
@@ -9,7 +8,7 @@ Console.WriteLine("FirebaseAdminApp");
 // Initialize the default app
 var defaultApp = FirebaseApp.Create(new AppOptions()
 {
-    Credential = GoogleCredential.FromFile($@"\service_account_private_key_file.json"),
+    Credential = GoogleCredential.FromFile($@"\<SERVICE_ACCOUNT_PRIVATE_KEY_JSON_FILE>"),
 });
 Console.WriteLine(defaultApp.Name); // "[DEFAULT]"
 

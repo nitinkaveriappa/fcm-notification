@@ -77,9 +77,10 @@
           console.log("An error occurred while retrieving token. ", err);
         });
 
+      // Include to handle notification message in the application foreground
       onMessage(messaging, (payload) => {
         console.log("Received foreground message", payload);
-        // ...
+        // Handle notification message if application tab is in focus
       });
     </script>
   </body>

@@ -1,6 +1,6 @@
 const { initializeApp, cert } = require("firebase-admin/app");
 const { getMessaging } = require("firebase-admin/messaging");
-const serviceAccount = require("./service_account_private_key_file.json");
+const serviceAccount = require("./<SERVICE_ACCOUNT_PRIVATE_KEY_JSON_FILE>");
 
 initializeApp({
   credential: cert(serviceAccount),
