@@ -64,6 +64,7 @@
         .then((currentToken) => {
           console.log("getToken");
           if (currentToken) {
+            // The currentToken is the <REGISTRATION_TOKEN> that needs to be passed to the trigger in order to send notification
             console.log("currentToken", { currentToken });
             // Send it to the backend server
           } else {
