@@ -27,3 +27,13 @@ getMessaging()
   .catch((error) => {
     console.log("Error sending message:", error);
   });
+
+/**
+ * If you face the Error code: UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+ * while running the NodeJS Code then run the below command before running this script.
+ *
+ * set NODE_TLS_REJECT_UNAUTHORIZED=0
+ *
+ * node app.js
+ *
+ */
